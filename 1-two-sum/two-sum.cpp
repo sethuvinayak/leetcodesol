@@ -5,11 +5,11 @@ public:
         while (i < nums.size()) {
             for (int j = i + 1; j < nums.size(); j++) {
                 if (nums[i] + nums[j] == target) {
-                    return {i, j};   // return vector properly
+                    return {i, j};   
                 }
             }
             i++;
         }
-        return {};  // return empty if no pair found
+        return {};  
     }
 };
